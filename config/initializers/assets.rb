@@ -18,9 +18,10 @@ Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'im
 Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'images', 'modal')
 Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'images', 'backgrounds')
 Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'js')
-Rails.application.config.assets.precompile += %w(*.jpg)
-Rails.application.config.assets.precompile += %w(*.png)
-Rails.application.config.assets.precompile += %w(*.gif)
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'bootstrap','js')
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts', 'font-awesome', 'css')
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts', 'elegant-font' ,'code')
+Rails.application.config.assets.precompile += %w(*.jpg *.png *.gif)
 
 
 # Precompile additional assets.
